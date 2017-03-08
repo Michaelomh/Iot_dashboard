@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -41,7 +41,92 @@
             </div>
         </div>
         <div class="col-md-12" id="heatMap">
-            
+
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <span class="title">Trolley Battery Overview</span>
+                <div class="table-responsive" style="overflow-x: hidden; overflow-y: scroll; height: 420px; float:left;">
+                    <table class="table" style="font-size: 1.5em;">
+                        <thead>
+                            <tr>
+                                <th class="col-md-4">
+                                    Cart ID &nbsp; <i class="fa fa-caret-up" aria-hidden="true" style="display: none;"></i><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                                </th>
+                                <th class="col-md-4">
+                                    Loc &nbsp; <i class="fa fa-caret-up" aria-hidden="true" style="display: none;"></i><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                                </th>
+                                <th class="col-md-4">
+                                    Batt % &nbsp; <i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="danger">
+                                <td>06</td>
+                                <td>Point 2</td>
+                                <td>15 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr class="warning">
+                                <td>11</td>
+                                <td>Point 2</td>
+                                <td>35 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>Point 2</td>
+                                <td>66 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>Point 1</td>
+                                <td>70 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>Point 1</td>
+                                <td>80 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>Point 2</td>
+                                <td>88 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>Point 3</td>
+                                <td>90 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Point 2</td>
+                                <td>92 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>Point 2</td>
+                                <td>92 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>Point 1</td>
+                                <td>98 <a title="Battery Replaced" style="color:black;"><i class="fa fa-battery-full" aria-hidden="true" style="margin-left: 5px;"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <span class="title">Current Shopping Cart Distribution</span>
+                <img src="img/jurongpoint_2.png" class="img-responsive" style="margin: 0px auto; height: 420px; position:absolute;">
+                <div class="locCircle" id="block1">16</div>
+                <div class="locCircle" id="block2">19</div>
+                <div class="locCircle" id="block3">23</div>
+                <div class="locCircle" id="block4">36</div>
+                <div class="locBlock" id="blockMis"><span>Missing: 5</span></div>
+                <div class="locBlock" id="blockUse"><span>In-Use: 25</span></div>
+                
+            </div>
         </div>
     </div>
 
