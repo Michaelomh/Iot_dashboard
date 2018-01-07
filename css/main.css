@@ -94,12 +94,37 @@ textarea {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #eaeaea;
+}
+
+.card {
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+.card-contents {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .title {
     font-size: 2em;
     float: left;
     font-weight: bold;
+}
+
+.subtitle {
+    color: #aeaeae;
+    font-size: 1.5em;
+    float: left;
 }
 
 .danger {
@@ -125,13 +150,13 @@ body {
 .locCircle {
     position: absolute;
     height: 45px;
-    width: 45px;
+    width: 130px;
     background-color: white;
     border: 2px solid black;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .locCircle:hover {
@@ -142,30 +167,23 @@ body {
 }
 
 #block1 {
-    left: 25px;
-    top: 50px;
+    left: 100px;
+    top: 130px;
 }
 
 #block2 {
-    left: 600px;
-    top: 10px;
+    left: 630px;
+    top: 120px;
 }
 
 #block3 {
-    left: 590px;
-    top: 305px;
+    left: 105px;
+    top: 345px;
 }
 
 #block4 {
-    left: 150px;
-    top: 320px;
-}
-
-#blockMis {
-    left: 18px;
-    top: 374px;
-    width: 166px;
-    opacity: 1.0;
+    left: 580px;
+    top: 350px;
 }
 
 #blockUse {
@@ -173,6 +191,59 @@ body {
     top: 374px;
     width: 166px;
     opacity: 1.0;
+}
+
+.col-md-2 {
+    width: calc(16.66666667% - 20px);
+}
+
+.col-md-3 {
+    width: calc(25% - 20px);
+}
+
+.col-md-4 {
+    width: calc(33.33333333% - 20px);
+}
+
+.col-md-6 {
+    width: calc(50% - 20px);
+    height: 420px;
+}
+
+.col-md-7 {
+    width: calc(58.33333333% - 20px);
+}
+
+.col-md-8 {
+    width: calc(66.66666667% - 20px);
+}
+
+.duty-img {
+    height: 45px;
+    padding-right: 10px;
+}
+
+.duty-table-closed {
+    height: 60px;
+    background-color: #808080;
+    color: #fff;
+}
+
+.duty-table-closed>td {
+    padding-top: 13px !important;
+}
+
+.duty-table-centered {
+    padding-top: 13px !important;
+}
+
+[data-notify="progressbar"] {
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
 }
 
 
