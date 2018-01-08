@@ -413,15 +413,6 @@ var svg = d3.select("#heatMap").append("svg")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var tip = d3.tip()
-    .attr('class', 'd3-tip')
-    .offset([-10, 0])
-    .html(function (d) {
-        return "<strong>No. of Alarms Triggered: </strong> <span style='color:#6baed6'>" + d.value + "</span><br>At time: <span style='color:#6baed6'>" + (d.hour + 7) + ":00 - " + (d.hour + 7) + ":59</span><br>At Exit: <span style='color:#6baed6'>" + d.exit + "</span>";
-    })
-
-svg.call(tip);
-
 var dayLabels = svg.selectAll(".dayLabel")
     .data(days)
     .enter().append("text")
@@ -486,8 +477,6 @@ var heatmapChart = function (dataDirectory) {
                 .attr("width", gridSize)
                 .attr("height", gridSize)
                 .style("fill", colors[0])
-                .on('mouseover', tip.show)
-                .on('mouseout', tip.hide);
 
             cards.transition().duration(1000)
                 .style("fill", function (d) {
